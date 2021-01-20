@@ -1,0 +1,15 @@
+handlers:
+- name: link_account
+- name: verify_code
+- name: start
+- name: link_sheet
+- name: unlink_sheet
+- name: list_sheets
+- name: validate_sheet_name
+- name: open_sheet
+- name: modify_number_field
+- name: read_field
+- name: remove_record
+httpsEndpoint:
+  baseUrl: <WEBHOOK_URL>
+  endpointApiVersion: 2

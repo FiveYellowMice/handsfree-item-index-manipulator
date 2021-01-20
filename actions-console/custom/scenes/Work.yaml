@@ -1,0 +1,18 @@
+intentEvents:
+- handler:
+    webhookHandler: modify_number_field
+  intent: modify_number_field
+- handler:
+    webhookHandler: read_field
+  intent: read_field
+- handler:
+    webhookHandler: modify_number_field
+  intent: increase_number_field
+- handler:
+    webhookHandler: modify_number_field
+  intent: decrease_number_field
+- handler:
+    webhookHandler: remove_record
+  intent: remove_record
+onEnter:
+  webhookHandler: start

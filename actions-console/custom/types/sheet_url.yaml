@@ -1,0 +1,5 @@
+regularExpression:
+  entities:
+    ^https://docs.google.com/spreadsheets/d/([a-zA-Z0-9-_]+)/edit(?:#|\?|$):
+      regularExpressions:
+      - ^https://docs.google.com/spreadsheets/d/([a-zA-Z0-9-_]+)/edit(?:#|\?|$)

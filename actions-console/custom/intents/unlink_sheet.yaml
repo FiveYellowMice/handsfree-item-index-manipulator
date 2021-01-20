@@ -1,0 +1,17 @@
+parameters:
+- name: sheet_name
+  type:
+    name: sheet_name
+trainingPhrases:
+- unlink ($sheet_name 'blah' auto=false)
+- unlink document
+- unlink a document
+- remove link to a sheet
+- remove link to a spreadsheet
+- remove a spreadsheet link
+- unlink spreadsheet
+- unlink sheet
+- forget ($sheet_name 'blah' auto=false)
+- remove spreadsheet link of ($sheet_name 'blah' auto=false)
+- unlink sheet ($sheet_name 'blah' auto=false)
+- unlink spreadsheet ($sheet_name 'blah' auto=false)

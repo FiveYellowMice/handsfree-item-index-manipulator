@@ -1,0 +1,21 @@
+parameters:
+- name: item_name
+  type:
+    name: item_name
+- name: field_name
+  type:
+    name: field_name
+- name: field_value_decrement
+  type:
+    name: actions.type.Number
+trainingPhrases:
+- subtract ($field_value_decrement '3' auto=true) from the ($field_name 'amount' auto=false)
+  of ($item_name 'grape' auto=false)
+- subtract the ($field_name 'amount' auto=false) of ($item_name 'potato' auto=false)
+  by ($field_value_decrement '12' auto=true)
+- subtract the ($field_name 'amount' auto=false) of ($item_name 'cucumber' auto=false)
+  by ($field_value_decrement '3.5' auto=true)
+- 'decrease the ($field_name ''amount'' auto=false) of ($item_name ''chicken'' auto=false)
+  by ($field_value_decrement ''0.5'' auto=true) '
+- decrease the ($field_name 'amount' auto=false) of ($item_name 'carrot' auto=false)
+  by ($field_value_decrement '1' auto=true)

@@ -1,0 +1,11 @@
+{
+    "name": "fiveyellowmice/handsfree-item-index-manipulator",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "michelf/php-markdown": "^1.9"
+    }
+}

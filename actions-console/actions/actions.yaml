@@ -1,0 +1,7 @@
+custom:
+  actions.intent.MAIN: {}
+  link_account: {}
+  link_sheet: {}
+  list_sheets: {}
+  open_sheet: {}
+  unlink_sheet: {}

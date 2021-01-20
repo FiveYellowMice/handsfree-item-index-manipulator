@@ -1,0 +1,19 @@
+parameters:
+- name: item_name
+  type:
+    name: item_name
+- name: field_name
+  type:
+    name: field_name
+- name: field_value_number
+  type:
+    name: actions.type.Number
+trainingPhrases:
+- set the ($field_name 'number' auto=false) of ($item_name 'cucumber' auto=false)
+  to ($field_value_number '2' auto=false)
+- change the ($field_name 'count' auto=false) of ($item_name 'potato' auto=false)
+  to ($field_value_number '2.5' auto=false)
+- change the ($field_name 'amount' auto=false) of ($item_name 'carrot' auto=false)
+  to ($field_value_number '1' auto=false)
+- 'set the ($field_name ''amount'' auto=false) of ($item_name ''carrot'' auto=false)
+  to ($field_value_number ''1'' auto=false) '

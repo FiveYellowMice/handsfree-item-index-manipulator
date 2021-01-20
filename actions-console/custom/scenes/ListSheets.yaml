@@ -1,0 +1,22 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: You are now working on $session.params.sheet_name.
+  transitionToScene: Work
+onSlotUpdated:
+  webhookHandler: validate_sheet_name
+slots:
+- commitBehavior:
+    writeSessionParam: sheet_name
+  name: sheet_name
+  promptSettings:
+    initialPrompt:
+      webhookHandler: list_sheets
+  required: true
+  type:
+    name: sheet_name

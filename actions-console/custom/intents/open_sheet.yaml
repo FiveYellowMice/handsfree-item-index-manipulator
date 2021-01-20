@@ -1,0 +1,12 @@
+parameters:
+- name: sheet_name
+  type:
+    name: sheet_name
+trainingPhrases:
+- switch to ($sheet_name 'blah' auto=false)
+- switch to spreadsheet ($sheet_name 'blah' auto=false)
+- work on ($sheet_name 'blah' auto=false)
+- work on sheet ($sheet_name 'blah' auto=false)
+- open spreadsheet ($sheet_name 'blah' auto=false)
+- open sheet ($sheet_name 'blah' auto=false)
+- open ($sheet_name 'blah' auto=false)

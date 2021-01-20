@@ -1,0 +1,7 @@
+/actions-console/gactions
+/actions-console/settings/settings.yaml
+/actions-console/webhooks/ActionsOnGoogleFulfillment.yaml
+
+/server/vendor/
+/server/index.html
+/server/config.php

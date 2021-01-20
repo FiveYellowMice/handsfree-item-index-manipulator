@@ -1,0 +1,8 @@
+parameters:
+- name: item_name
+  type:
+    name: item_name
+trainingPhrases:
+- remove ($item_name 'free range eggs' auto=false)
+- delete ($item_name 'carrot' auto=false)
+- remove ($item_name 'buk choy' auto=false)

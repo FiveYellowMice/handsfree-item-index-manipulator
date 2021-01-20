@@ -1,0 +1,20 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    webhookHandler: verify_code
+onEnter:
+  webhookHandler: link_account
+slots:
+- name: verification_code
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: After authenticating in the browser, paste your verification
+                  code.
+  required: true
+  type:
+    name: verification_code

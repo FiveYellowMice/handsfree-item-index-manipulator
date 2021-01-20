@@ -1,0 +1,13 @@
+parameters:
+- name: item_name
+  type:
+    name: item_name
+- name: field_name
+  type:
+    name: field_name
+trainingPhrases:
+- what are the ($field_name 'amount' auto=false) of ($item_name 'garlic' auto=false)
+- what's the ($field_name 'amount' auto=false) of ($item_name 'cucumber' auto=false)
+- what is the ($field_name 'amount' auto=false) of ($item_name 'cucumber' auto=false)
+- get the ($field_name 'amount' auto=false) of ($item_name 'carrot' auto=false)
+- read the ($field_name 'amount' auto=false) of ($item_name 'carrot' auto=false)

@@ -1,0 +1,19 @@
+parameters:
+- name: item_name
+  type:
+    name: item_name
+- name: field_name
+  type:
+    name: field_name
+- name: field_value_increment
+  type:
+    name: actions.type.Number
+trainingPhrases:
+- add ($field_value_increment '0.25' auto=true) to the ($field_name 'amount' auto=false)
+  of ($item_name 'salt' auto=false)
+- add ($field_value_increment '0.5' auto=true) to the ($field_name 'amount' auto=false)
+  of ($item_name 'bread' auto=false)
+- increase the ($field_name 'amount' auto=false) of ($item_name 'cucumber' auto=false)
+  by ($field_value_increment '3.5' auto=true)
+- increase the ($field_name 'amount' auto=false) of ($item_name 'carrot' auto=false)
+  by ($field_value_increment '1' auto=false)
