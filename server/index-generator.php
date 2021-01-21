@@ -25,6 +25,9 @@ if (php_sapi_name() !== 'cli') {
         padding: 0 0.5rem;
         max-width: 900px;
       }
+      .content :target {
+        background-color: yellow;
+      }
       .content h1 {
         text-align: center;
       }
@@ -62,14 +65,15 @@ if (php_sapi_name() !== 'cli') {
   </head>
   <body>
     <div class="content">
-      <header><a href="https://github.com/FiveYellowMice/handsfree-item-index-manipulator">GitHub</a></header>
+      <header><a href="https://github.com/FiveYellowMice/handsfree-item-index-manipulator">GitHub</a> | <a href="#privacy">Privacy Policy</a></header>
 
       <?php
       echo Michelf\MarkdownExtra::defaultTransform(file_get_contents(__DIR__.'/../README.md'));
       ?>
 
-      <h2 id="privacy">Privacy</h2>
-      <p>There is literally no data stored on this server. All your data still are Google's, either stored in Google Assistant's memory (authentication token and your linked spreadsheets), or in your spreadsheets.</p>
+      <h2 id="privacy">Privacy Policy</h2>
+      <p>There is literally no user data stored on this server. All your data still are Google's, either stored in Google Assistant's memory (authentication token and your linked spreadsheets), or in your spreadsheets.</p>
+      <p>This program will only access the spreadsheets you have explicitly linked. The spreadsheets will only be accessed at your explicit command. The data inside the spreadsheets are not stored anywhere other than Google's servers, and are not sent anywhere other than Google's servers.</p>
 
       <footer>
         Made with 🥕 by <a href="https://fym.moe/">FiveYellowMice</a>
