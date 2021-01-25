@@ -8,6 +8,8 @@ if (php_sapi_name() !== 'cli') {
   die();
 }
 
+$privacy_policy_exists = file_exists(__DIR__.'/privacy-policy.html');
+
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,15 +67,25 @@ if (php_sapi_name() !== 'cli') {
   </head>
   <body>
     <div class="content">
-      <header><a href="https://github.com/FiveYellowMice/handsfree-item-index-manipulator">GitHub</a> | <a href="#privacy">Privacy Policy</a></header>
+      <header>
+        <a href="https://github.com/FiveYellowMice/handsfree-item-index-manipulator">GitHub</a>
+        <?php if ($privacy_policy_exists) { ?>
+        |
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <?php } ?>
+      </header>
 
       <?php
       echo Michelf\MarkdownExtra::defaultTransform(file_get_contents(__DIR__.'/../README.md'));
       ?>
 
-      <h2 id="privacy">Privacy Policy</h2>
+      <h2 id="privacy">Privacy</h2>
       <p>There is literally no user data stored on this server. All your data still are Google's, either stored in Google Assistant's memory (authentication token and your linked spreadsheets), or in your spreadsheets.</p>
+      <?php if ($privacy_policy_exists) {?>
+      <p>For a more comprehensive Privacy Policy, see <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      <?php } else { ?>
       <p>This program will only access the spreadsheets you have explicitly linked. The spreadsheets will only be accessed at your explicit command. The data inside the spreadsheets are not stored anywhere other than Google's servers, and are not sent anywhere other than Google's servers.</p>
+      <?php } ?>
 
       <footer>
         Made with 🥕 by <a href="https://fym.moe/">FiveYellowMice</a>
